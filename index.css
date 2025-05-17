@@ -34,3 +34,19 @@ button{
     font-size:20px;
     font-family: 'Rubik',sans-serif;
 }
+ ul{
+  padding: 0;
+  display:flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap:10px;
+ }
+ li {
+  font-size:18px;
+   background-color :#FFFDF8;
+   flex-grow: 1;
+   text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+     border-radius: 8px;
+ }
