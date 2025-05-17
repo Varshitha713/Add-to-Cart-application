@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import  { getDatabase, ref,push}  from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import  { getDatabase, ref,push,onValue}  from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 
 const appSettings = {
@@ -23,7 +23,12 @@ addButtonEl.addEventListener("click",function() {
   inputFieldEl.value=''
    //console.log(inputValue)
 })
-
+ 
+onValue(itemsInCart , function(snapshot){
+  let items =snapshot.val()
+  let res=Object.values(items)
+  console.log(res)
+})
 
 
 
