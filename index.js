@@ -20,5 +20,6 @@ addButtonEl.addEventListener("click",function() {
   let inputValue=inputFieldEl.value
    push(itemsInCart, inputValue)
   shoppingListEl.innerHTML += `<li>${inputValue}</li>`
-   console.log(inputValue)
+  inputFieldEl.value=''
+   //console.log(inputValue)
 })
